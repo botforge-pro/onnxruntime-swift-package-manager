@@ -1,5 +1,10 @@
 # Swift Package Manager for ONNX Runtime
 
+> [!NOTE]
+> This is a mirror of `microsoft/onnxruntime-swift-package-manager`, which disappeared from GitHub in November 2026 together with the rest of the ONNX Runtime repositories. The history up to upstream tag 1.24.2 (commit `b7fb7f7`) is unchanged. On top of it, the only change is where the two binary targets are downloaded from: the [binaries-1.24.2](https://github.com/botforge-pro/onnxruntime-swift-package-manager/releases/tag/binaries-1.24.2) release here instead of `download.onnxruntime.ai`. The checksums in `Package.swift` are Microsoft's own, so SwiftPM refuses any archive that differs from the one Microsoft published.
+>
+> To use it, replace `https://github.com/microsoft/onnxruntime-swift-package-manager` with `https://github.com/botforge-pro/onnxruntime-swift-package-manager` and keep the version requirement.
+
 A light-weight repository for providing [Swift Package Manager (SPM)](https://www.swift.org/package-manager/) support for [ONNXRuntime](https://github.com/microsoft/onnxruntime). The ONNX Runtime native package is included as a binary dependency of the SPM package.
 
 
